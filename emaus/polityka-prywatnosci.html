@@ -14,61 +14,204 @@
 
 <main class="doc">
   <div class="eyebrow">Dokument</div>
-  <h1>Polityka prywatności aplikacji Emaus</h1>
-  <p class="meta">Wersja robocza z dnia 4 września 2026 r.</p>
-
-  <div class="draft"><b>Projekt do weryfikacji prawnej.</b> Ten tekst to makieta struktury i treści. Fragmenty oznaczone kolorem wymagają uzupełnienia, a całość zatwierdzenia przed publikacją w Google Play. Do czasu zatwierdzenia dokument nie obowiązuje.</div>
-
-  <h2>1. Administrator danych</h2>
-  <p>Administratorem danych osobowych przetwarzanych w związku z aplikacją mobilną Emaus (dalej: „Aplikacja”) jest <span class="fill">[[DO UZUPEŁNIENIA: imię i nazwisko / nazwa, adres]]</span>. Kontakt w sprawach ochrony danych: <span class="fill">[[DO UZUPEŁNIENIA: e-mail]]</span>.</p>
-
-  <h2>2. Najkrócej</h2>
+  <h1 id="polityka-prywatności-aplikacji-emaus">Polityka prywatności aplikacji Emaus</h1>
+  <p class="meta"><strong>Wersja:</strong> 1.0<br />
+  <strong>Data wejścia w życie:</strong> 4 września 2026 r.<br />
+  <strong>Ostatnia aktualizacja:</strong> 4 września 2026 r.</p>
+  <h2 id="administrator-danych-i-kontakt">1. Administrator danych i kontakt</h2>
+  <p>Administratorem danych osobowych przetwarzanych w związku z aplikacją mobilną <strong>Emaus</strong> („Aplikacja”) jest Tomasz Borowiec, twórca aplikacji działający niezależnie pod nazwą Pars Optima, jako osoba fizyczna nieprowadząca działalności gospodarczej („Administrator”)..</p>
+  <p>Kontakt w sprawach dotyczących prywatności oraz realizacji praw odbywa się drogą elektroniczną za pośrednictwem adresu e-mail: parsoptima.apps@proton.me.</p>
+  <p>Administrator nie wyznaczył inspektora ochrony danych. Jeżeli stan ten się zmieni, Polityka zostanie zaktualizowana.</p>
+  <h2 id="najważniejsze-informacje-w-skrócie">2. Najważniejsze informacje w skrócie</h2>
+  <ol type="1">
+  <li>Korzystanie z podstawowych funkcji Aplikacji nie wymaga konta, logowania ani podania imienia, nazwiska lub adresu e-mail.</li>
+  <li>Lokalizacja używana do wyświetlenia pozycji na mapie i obliczenia odległości jest przetwarzana lokalnie na urządzeniu i nie jest zapisywana na serwerach Emaus. Dostawca mapy może jednak przetwarzać dane techniczne zgodnie z własnymi zasadami.</li>
+  <li>Dane są wysyłane do Administratora dopiero, gdy użytkownik dobrowolnie prześle zgłoszenie poprawki lub nowego miejsca. Zgłoszenie może obejmować dokładną lokalizację, zdjęcia, komentarz, identyfikator instalacji i czas wysłania.</li>
+  <li>Aplikacja nie zawiera reklam, nie prowadzi analityki marketingowej i nie używa Firebase, Sentry, PostHog ani podobnych narzędzi w wersji opisanej w tej Polityce.</li>
+  <li>Zgłoszenia i ich oryginalne zdjęcia są usuwane najpóźniej po 12 miesiącach od wysłania, chyba że wcześniejsze usunięcie jest możliwe albo dłuższe przechowanie jest niezbędne do ustalenia, dochodzenia lub obrony roszczeń.</li>
+  <li>Zdjęcie kościoła opublikowane po moderacji może być przechowywane tak długo, jak jest używane w Aplikacji lub na stronie Emaus.</li>
+  </ol>
+  <h2 id="zakres-polityki">3. Zakres Polityki</h2>
+  <p>Polityka dotyczy przetwarzania danych w Aplikacji Emaus, udostępnianej pod identyfikatorem pakietu <code>pl.parsoptima.emaus</code>, oraz obsługi wiadomości przesłanych na adres kontaktowy. Nie obejmuje samodzielnego przetwarzania danych przez sklepy z aplikacjami, zewnętrzne aplikacje nawigacyjne, serwisy parafialne, Wikipedię ani stronę wsparcia otwierane na żądanie użytkownika.</p>
+  <h2 id="jakie-dane-są-przetwarzane">4. Jakie dane są przetwarzane</h2>
+  <h3 id="korzystanie-z-mapy-i-katalogu-miejsc">4.1. Korzystanie z mapy i katalogu miejsc</h3>
+  <p>Aplikacja pobiera publiczne informacje o miejscach kultu, w szczególności nazwy, adresy, współrzędne miejsc, godziny mszy i adoracji, odnośniki i zdjęcia budynków. Kopia tych informacji może być przechowywana lokalnie na urządzeniu, aby Aplikacja działała także bez połączenia z Internetem.</p>
+  <p>Podczas połączenia z backendem, serwerem zdjęć lub usługą mapową dostawcy infrastruktury mogą automatycznie przetwarzać dane techniczne, takie jak adres IP, data i czas żądania, typ urządzenia lub aplikacji oraz informacje diagnostyczne. Administrator ogranicza ten zakres do danych niezbędnych do dostarczenia i zabezpieczenia usługi.</p>
+  <h3 id="lokalizacja-na-mapie">4.2. Lokalizacja na mapie</h3>
+  <p>Jeżeli użytkownik udzieli systemowego pozwolenia, Aplikacja może odczytać lokalizację urządzenia w celu:</p>
   <ul>
-    <li>Aplikacja nie wymaga konta, logowania ani podania imienia, nazwiska czy adresu e-mail.</li>
-    <li>Twoja lokalizacja jest używana wyłącznie na telefonie do wycentrowania mapy i policzenia odległości. Nie wysyłamy jej na nasze serwery, chyba że sam ją dołączysz do zgłoszenia.</li>
-    <li>Jedyne dane, które trafiają do nas, to treść zgłoszeń poprawek, które sam wysyłasz: kategoria, komentarz, zdjęcia, opcjonalnie pozycja GPS oraz losowy identyfikator instalacji.</li>
-    <li>Nie ma reklam, nie ma analityki, nie sprzedajemy ani nie udostępniamy danych w celach marketingowych.</li>
+  <li>wycentrowania mapy na użytkowniku;</li>
+  <li>obliczenia odległości do wybranych miejsc.</li>
   </ul>
-
-  <h2>3. Jakie dane przetwarzamy i po co</h2>
-  <table>
-    <tr><th>Dane</th><th>Kiedy</th><th>Cel i podstawa</th></tr>
-    <tr><td>Losowy identyfikator instalacji (UUID)</td><td>Tworzony przy pierwszym zgłoszeniu, wysyłany z każdym zgłoszeniem</td><td>Grupowanie zgłoszeń z jednego urządzenia i ochrona przed nadużyciami. Uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO).</td></tr>
-    <tr><td>Pozycja GPS (szerokość, długość, dokładność)</td><td>Tylko przy wysyłce zgłoszenia, jeśli udzielono zgody na lokalizację; przy zgłoszeniu nowego miejsca jest wymagana</td><td>Weryfikacja wiarygodności zgłoszenia i ustalenie położenia miejsca kultu. <span class="fill">[[DO POTWIERDZENIA: zgoda (lit. a) czy uzasadniony interes (lit. f)]]</span></td></tr>
-    <tr><td>Zdjęcia (tablica z godzinami, ogłoszenie, budynek)</td><td>Tylko jeśli je dodasz do zgłoszenia</td><td>Weryfikacja godzin Mszy i adoracji. Prosimy o zdjęcia bez osób. <span class="fill">[[DO POTWIERDZENIA: podstawa]]</span></td></tr>
-    <tr><td>Treść komentarza i kategoria zgłoszenia</td><td>Tylko jeśli wyślesz zgłoszenie</td><td>Rozpatrzenie zgłoszenia i poprawa danych. Uzasadniony interes (lit. f).</td></tr>
-    <tr><td>Dane techniczne połączenia (adres IP)</td><td>Przy pobieraniu aktualizacji bazy i zdjęć kościołów</td><td>Dostarczenie usługi; przetwarzane przez dostawców infrastruktury w ich logach (pkt 5).</td></tr>
-  </table>
-  <p>Lokalizacja urządzenia używana do wyświetlenia mapy i odległości jest przetwarzana wyłącznie lokalnie na Twoim telefonie i nie jest przez nas zapisywana.</p>
-
-  <h2>4. Uprawnienia aplikacji</h2>
+  <p>W tym trybie współrzędne użytkownika są wykorzystywane lokalnie i nie są wysyłane do bazy zgłoszeń Administratora. Użytkownik może odmówić lub cofnąć uprawnienie w ustawieniach systemowych; mapa pozostanie dostępna, a jej początkowy widok może wskazywać domyślną lokalizację.</p>
+  <p>Mapa jest renderowana przez Google Maps Platform. Google może przetwarzać dane techniczne i dane związane z korzystaniem z mapy, w tym adres IP, identyfikator właściwy dla Maps SDK, dane diagnostyczne, interakcje z mapą oraz — zależnie od konfiguracji i uprawnień — informacje o lokalizacji. Szczegóły opisują <a href="https://policies.google.com/privacy">Polityka prywatności Google</a> i <a href="https://maps.google.com/help/terms_maps/">Dodatkowe warunki korzystania z Google Maps/Google Earth</a>.</p>
+  <h3 id="zgłoszenie-poprawki-do-istniejącego-miejsca">4.3. Zgłoszenie poprawki do istniejącego miejsca</h3>
+  <p>Po wybraniu funkcji zgłoszenia poprawki Aplikacja może przesłać:</p>
   <ul>
-    <li><b>Lokalizacja</b> (opcjonalna): wycentrowanie mapy, odległości, geotag zgłoszenia. Bez zgody mapa startuje z widoku domyślnego.</li>
-    <li><b>Aparat i galeria</b> (opcjonalne): dodanie zdjęcia do zgłoszenia. Uprawnienie jest pytane dopiero, gdy wybierzesz zdjęcie.</li>
+  <li>losowy identyfikator zgłoszenia (UUID);</li>
+  <li>losowy, stały identyfikator instalacji Aplikacji (<code>device_id</code>), który nie jest numerem telefonu, IMEI ani identyfikatorem reklamowym;</li>
+  <li>identyfikator miejsca i migawkę jego nazwy;</li>
+  <li>wybrane rodzaje błędu lub poprawki;</li>
+  <li>komentarz wpisany przez użytkownika;</li>
+  <li>dokładną lokalizację i jej deklarowaną dokładność — tylko po czytelnym poinformowaniu użytkownika i wykonaniu działania powodującego jej dołączenie;</li>
+  <li>dodane zdjęcia;</li>
+  <li>datę i czas wysłania.</li>
   </ul>
-  <p>Aplikacja nie korzysta z lokalizacji w tle.</p>
-
-  <h2>5. Odbiorcy danych i dostawcy</h2>
+  <p>Podanie danych w zgłoszeniu jest dobrowolne, ale bez danych oznaczonych w formularzu jako wymagane nie będzie możliwe przesłanie danego rodzaju zgłoszenia. Z podstawowych funkcji mapy można nadal korzystać bez wysyłania zgłoszeń.</p>
+  <h3 id="zgłoszenie-nowego-miejsca">4.4. Zgłoszenie nowego miejsca</h3>
+  <p>Przesłanie nowego miejsca wymaga podania jego nazwy lub opisu, dokładnej pozycji GPS oraz zdjęcia budynku z zewnątrz. Aplikacja przesyła także identyfikator zgłoszenia, identyfikator instalacji, komentarz lub dane formularza, deklarowaną dokładność GPS i czas wysłania.</p>
+  <p>Użytkownik powinien fotografować wyłącznie miejsce i informacje potrzebne do zgłoszenia. Nie należy przesyłać zdjęć przedstawiających rozpoznawalne osoby, tablice rejestracyjne, prywatne dokumenty, wnętrza prywatnych posesji ani inne zbędne dane osobowe.</p>
+  <h3 id="kontakt-e-mail-reklamacje-i-żądania-dotyczące-danych">4.5. Kontakt e-mail, reklamacje i żądania dotyczące danych</h3>
+  <p>Jeżeli użytkownik skontaktuje się z Administratorem, przetwarzane mogą być: adres e-mail, treść wiadomości, dane podpisu, załączniki oraz informacje potrzebne do udzielenia odpowiedzi i udokumentowania sprawy.</p>
+  <h2 id="cele-i-podstawy-prawne">5. Cele i podstawy prawne</h2>
   <table>
-    <tr><th>Podmiot</th><th>Rola</th><th>Uwagi</th></tr>
-    <tr><td>Supabase</td><td>Baza danych i przechowywanie zdjęć zgłoszeń</td><td>Region: <span class="fill">[[DO UZUPEŁNIENIA]]</span>. Umowa powierzenia (DPA).</td></tr>
-    <tr><td>Google Maps Platform</td><td>Wyświetlanie mapy w aplikacji</td><td>Google przetwarza dane zgodnie z własną polityką prywatności: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</td></tr>
-    <tr><td>Cloudflare</td><td>Sieć dostarczania zdjęć kościołów (CDN)</td><td>Adres IP w logach serwera.</td></tr>
-    <tr><td><span class="fill">[[DO POTWIERDZENIA: n8n, Slack, dostawca modelu AI]]</span></td><td>Automatyczne porządkowanie i moderacja zgłoszeń</td><td>Wypełnić, jeśli obieg jest używany produkcyjnie.</td></tr>
+  <colgroup>
+  <col style="width: 33%" />
+  <col style="width: 33%" />
+  <col style="width: 33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th>Operacja</th>
+  <th>Cel</th>
+  <th>Podstawa prawna</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td>Dostarczenie katalogu, synchronizacja danych i obsługa techniczna</td>
+  <td>wykonanie bezpłatnej usługi, zapewnienie jej działania i bezpieczeństwa</td>
+  <td>art. 6 ust. 1 lit. b RODO; w zakresie bezpieczeństwa i diagnostyki niezbędnej do działania także art. 6 ust. 1 lit. f RODO — uzasadniony interes polegający na ochronie Aplikacji i infrastruktury</td>
+  </tr>
+  <tr class="even">
+  <td>Lokalny dostęp do lokalizacji na mapie</td>
+  <td>pokazanie pozycji i odległości</td>
+  <td>zgoda udzielona przez świadome działanie użytkownika i systemowe uprawnienie — art. 6 ust. 1 lit. a RODO; dane nie są zapisywane przez Administratora</td>
+  </tr>
+  <tr class="odd">
+  <td>Przyjęcie i weryfikacja zgłoszenia</td>
+  <td>obsługa dobrowolnej funkcji zgłoszeń, aktualizacja danych o miejscach</td>
+  <td>art. 6 ust. 1 lit. b RODO</td>
+  </tr>
+  <tr class="even">
+  <td>Dołączenie dokładnej lokalizacji do zgłoszenia</td>
+  <td>potwierdzenie położenia istniejącego lub nowego miejsca</td>
+  <td>zgoda użytkownika — art. 6 ust. 1 lit. a RODO, wyrażona po uprzedniej informacji przez działanie powodujące pobranie i wysłanie lokalizacji</td>
+  </tr>
+  <tr class="odd">
+  <td>Identyfikator instalacji i zabezpieczenie zgłoszeń</td>
+  <td>ograniczanie spamu, wykrywanie nadużyć, zachowanie integralności procesu moderacji</td>
+  <td>art. 6 ust. 1 lit. f RODO — uzasadniony interes Administratora</td>
+  </tr>
+  <tr class="even">
+  <td>Moderacja i ewentualna publikacja zdjęcia miejsca</td>
+  <td>weryfikacja zgłoszenia, rozwój katalogu i prezentacja miejsca</td>
+  <td>art. 6 ust. 1 lit. b RODO oraz art. 6 ust. 1 lit. f RODO; podstawą korzystania z utworu jest licencja opisana w Regulaminie</td>
+  </tr>
+  <tr class="odd">
+  <td>Obsługa korespondencji i reklamacji</td>
+  <td>udzielenie odpowiedzi, realizacja praw, obrona przed roszczeniami</td>
+  <td>art. 6 ust. 1 lit. b, c lub f RODO — zależnie od treści sprawy</td>
+  </tr>
+  <tr class="even">
+  <td>Ustalenie, dochodzenie lub obrona roszczeń</td>
+  <td>ochrona praw Administratora i użytkowników</td>
+  <td>art. 6 ust. 1 lit. f RODO</td>
+  </tr>
+  </tbody>
   </table>
-  <p>Po naciśnięciu „Trasa” współrzędne kościoła są przekazywane do wybranej przez Ciebie aplikacji nawigacyjnej. Od tego momentu obowiązuje polityka tej aplikacji.</p>
-
-  <h2>6. Jak długo przechowujemy dane</h2>
-  <p>Zgłoszenia i zdjęcia przechowujemy przez <span class="fill">[[DO UZUPEŁNIENIA: okres, np. 12 miesięcy od rozpatrzenia]]</span>, a następnie usuwamy lub anonimizujemy. Identyfikator instalacji jest usuwany razem z odinstalowaniem aplikacji z Twojego telefonu; w naszej bazie pozostaje przy zgłoszeniach przez ten sam okres.</p>
-
-  <h2>7. Twoje prawa</h2>
-  <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Ponieważ nie prowadzimy kont, prosimy o kontakt e-mailem i podanie przybliżonej daty oraz miejsca zgłoszenia, które chcesz usunąć.</p>
-
-  <h2>8. Dzieci</h2>
-  <p>Aplikacja nie jest kierowana do dzieci poniżej 13 roku życia i nie zbiera świadomie ich danych.</p>
-
-  <h2>9. Zmiany polityki</h2>
-  <p>O istotnych zmianach poinformujemy w aplikacji i na tej stronie. Data ostatniej aktualizacji znajduje się na górze dokumentu.</p>
+  <p>Zgodę można wycofać w dowolnym momencie przez zmianę uprawnień systemowych lub kontakt z Administratorem. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania sprzed jej wycofania. Jeżeli dokładna lokalizacja jest wymagana do zgłoszenia nowego miejsca, jej niedostarczenie uniemożliwi wysłanie tego zgłoszenia, ale nie ograniczy pozostałych funkcji Aplikacji.</p>
+  <h2 id="odbiorcy-danych-i-dostawcy">6. Odbiorcy danych i dostawcy</h2>
+  <p>Administrator korzysta z następujących kategorii odbiorców i dostawców:</p>
+  <ol type="1">
+  <li><strong>Supabase, Inc.</strong> — backend, baza danych i Supabase Storage. Dane zgłoszeń, w tym zdjęcia, są przechowywane w regionie projektu we Frankfurcie w Unii Europejskiej. Supabase działa na udokumentowane polecenie Administratora w zakresie objętym umową przetwarzania danych.</li>
+  <li><strong>Cloudflare, Inc.</strong> — dostarczanie przez CDN publicznych zdjęć miejsc. Cloudflare może przetwarzać adres IP i dane techniczne połączenia. Zdjęcia będące częścią prywatnego, niezweryfikowanego zgłoszenia pozostają w Supabase Storage; do infrastruktury publikacyjnej trafia dopiero wybrana kopia zdjęcia miejsca.</li>
+  <li><strong>Google</strong> — Google Maps Platform oraz dystrybucja Aplikacji przez Google Play. W zakresie danych gromadzonych samodzielnie przez Maps SDK lub sklep Google działa zgodnie ze swoimi warunkami i polityką prywatności.</li>
+  <li><strong>Proton AG</strong> — obsługa poczty elektronicznej Administratora.</li>
+  <li>upoważnieni współpracownicy techniczni lub prawni — wyłącznie w zakresie niezbędnym do utrzymania Aplikacji, obsługi zgłoszenia, incydentu lub roszczenia i po zobowiązaniu do poufności.</li>
+  <li>organy publiczne — jeżeli udostępnienie jest wymagane przez prawo.</li>
+  </ol>
+  <p>Aplikacja nie przekazuje obecnie zgłoszeń do n8n, Slacka ani dostawcy modelu AI. Uruchomienie takiego procesu będzie wymagało odrębnej oceny i aktualizacji tej Polityki przed rozpoczęciem przekazywania danych.</p>
+  <h2 id="przekazywanie-danych-poza-europejski-obszar-gospodarczy">7. Przekazywanie danych poza Europejski Obszar Gospodarczy</h2>
+  <p>Niektórzy dostawcy mają siedzibę lub podwykonawców poza Europejskim Obszarem Gospodarczym. Dane mogą być wtedy przekazywane na podstawie właściwego mechanizmu przewidzianego w rozdziale V RODO, w szczególności decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony albo standardowych klauzul umownych, wraz z dodatkowymi zabezpieczeniami, gdy są wymagane.</p>
+  <p>Podstawowe dane zgłoszeń są przechowywane w wybranym regionie Supabase we Frankfurcie. Nie wyklucza to ograniczonego dostępu technicznego lub przetwarzania pomocniczego przez dostawcę i jego podwykonawców na warunkach umowy powierzenia.</p>
+  <h2 id="okres-przechowywania">8. Okres przechowywania</h2>
+  <table>
+  <colgroup>
+  <col style="width: 50%" />
+  <col style="width: 50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th>Dane</th>
+  <th>Okres</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td>Niewysłane zgłoszenie i jego zdjęcia na urządzeniu</td>
+  <td>do skutecznego wysłania, anulowania przez użytkownika, usunięcia danych Aplikacji albo odinstalowania Aplikacji, zależnie od tego, co nastąpi wcześniej; po udanej wysyłce lokalne pliki zdjęć są usuwane</td>
+  </tr>
+  <tr class="even">
+  <td>Zgłoszenie w Supabase, identyfikator instalacji, dokładna lokalizacja, komentarz i oryginalne zdjęcia</td>
+  <td>nie dłużej niż 12 miesięcy od wysłania; mogą zostać usunięte wcześniej, gdy nie są już potrzebne</td>
+  </tr>
+  <tr class="odd">
+  <td>Opublikowana kopia zdjęcia miejsca</td>
+  <td>przez czas wykorzystywania zdjęcia w Aplikacji lub na stronie Emaus, do wcześniejszego usunięcia po decyzji Administratora albo skutecznym żądaniu uprawnionej osoby</td>
+  </tr>
+  <tr class="even">
+  <td>Minimalny dowód pochodzenia i licencji opublikowanego zdjęcia</td>
+  <td>przez czas publikacji zdjęcia oraz przez okres niezbędny do obrony przed roszczeniami; obejmuje UUID zgłoszenia, datę zgłoszenia, wersję zaakceptowanego Regulaminu/licencji, skrót pliku i datę publikacji; po usunięciu zgłoszenia nie obejmuje GPS, komentarza ani identyfikatora instalacji</td>
+  </tr>
+  <tr class="odd">
+  <td>Korespondencja i reklamacje</td>
+  <td>przez czas obsługi sprawy, a następnie do upływu terminów przedawnienia roszczeń lub obowiązków archiwizacyjnych</td>
+  </tr>
+  <tr class="even">
+  <td>Logi techniczne dostawców</td>
+  <td>zgodnie z ustawieniami i niezbędnymi okresami dostawców, nie dłużej niż jest to konieczne do bezpieczeństwa i działania usługi; Administrator powinien cyklicznie weryfikować te ustawienia</td>
+  </tr>
+  </tbody>
+  </table>
+  <p>Jeżeli prawo wymaga dłuższego przechowania albo dane są potrzebne do ustalenia, dochodzenia lub obrony konkretnego roszczenia, odpowiedni zakres może być przechowywany do zakończenia sprawy i upływu właściwego terminu.</p>
+  <h2 id="publikowanie-zdjęć-ze-zgłoszeń">9. Publikowanie zdjęć ze zgłoszeń</h2>
+  <p>Zdjęcie zewnętrzne kościoła może zostać wybrane po moderacji i opublikowane anonimowo jako zdjęcie miejsca. Administrator nie publikuje identyfikatora instalacji, dokładnej pozycji użytkownika ani komentarza wraz ze zdjęciem.</p>
+  <p>Przed publikacją zdjęcie powinno zostać sprawdzone pod kątem rozpoznawalnych osób, tablic rejestracyjnych, dokumentów i innych zbędnych danych. Administrator może zdjęcie odrzucić, wykadrować, zmniejszyć, skonwertować albo zamazać zbędne elementy. Jeżeli bezpieczna publikacja nie jest możliwa, zdjęcie nie zostanie opublikowane.</p>
+  <h2 id="prawa-osób-których-dane-dotyczą">10. Prawa osób, których dane dotyczą</h2>
+  <p>Na warunkach określonych w RODO użytkownik może żądać:</p>
+  <ul>
+  <li>dostępu do danych i otrzymania ich kopii;</li>
+  <li>sprostowania danych;</li>
+  <li>usunięcia danych;</li>
+  <li>ograniczenia przetwarzania;</li>
+  <li>przeniesienia danych, gdy podstawą jest zgoda lub umowa i przetwarzanie odbywa się automatycznie;</li>
+  <li>wniesienia sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie;</li>
+  <li>wycofania zgody w dowolnym momencie;</li>
+  <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych: <a href="https://uodo.gov.pl/">uodo.gov.pl</a>.</li>
+  </ul>
+  <p>Aby złożyć żądanie, należy napisać na <strong>parsoptima.apps@proton.me</strong>. Ponieważ Aplikacja nie ma kont i z założenia nie zna tożsamości użytkownika, w wiadomości należy podać identyfikator zgłoszenia lub identyfikator instalacji widoczny w Aplikacji, ewentualnie datę, przybliżoną godzinę, miejsce i rodzaj zgłoszenia. Administrator nie będzie zbierał dodatkowych danych wyłącznie po to, aby zidentyfikować osobę. Jeżeli mimo przekazanych informacji nie będzie możliwe wiarygodne odnalezienie danych, realizacja żądania może być ograniczona zgodnie z art. 11 RODO.</p>
+  <p>Administrator może poprosić o dodatkowe informacje wyłącznie wtedy, gdy są konieczne do potwierdzenia, że żądanie dotyczy danych osoby występującej z wnioskiem.</p>
+  <h2 id="zautomatyzowane-decyzje-i-profilowanie">11. Zautomatyzowane decyzje i profilowanie</h2>
+  <p>Administrator nie podejmuje wobec użytkowników decyzji wywołujących skutki prawne lub podobnie istotnie wpływających na użytkownika w sposób wyłącznie zautomatyzowany. Nie prowadzi profilowania użytkowników na potrzeby reklamy ani marketingu.</p>
+  <h2 id="bezpieczeństwo-i-minimalizacja">12. Bezpieczeństwo i minimalizacja</h2>
+  <p>Administrator stosuje środki odpowiednie do ryzyka, w szczególności szyfrowanie transmisji, ograniczenie uprawnień anonimowego klienta do niezbędnych operacji, kontrolę dostępu administracyjnego, moderację zdjęć, ograniczone okresy przechowywania oraz rozdzielenie prywatnych plików zgłoszeń od opublikowanych zdjęć.</p>
+  <p>Użytkownik powinien aktualizować Aplikację i system urządzenia, chronić urządzenie blokadą ekranu oraz nie umieszczać w komentarzach i zdjęciach danych, które nie są potrzebne do zgłoszenia.</p>
+  <h2 id="dzieci">13. Dzieci</h2>
+  <p>Aplikacja nie jest kierowana do dzieci i Administrator nie zamierza świadomie gromadzić danych dzieci. Osoba niepełnoletnia powinna korzystać z funkcji wysyłania zgłoszeń pod nadzorem i za zgodą rodzica lub opiekuna. Po uzyskaniu wiarygodnej informacji, że zgłoszenie zawiera dane dziecka, Administrator oceni sprawę i usunie zbędne dane bez nieuzasadnionej zwłoki.</p>
+  <h2 id="linki-i-aplikacje-zewnętrzne">14. Linki i aplikacje zewnętrzne</h2>
+  <p>Aplikacja może otworzyć na żądanie użytkownika stronę parafii, Wikipedię, zewnętrzną aplikację nawigacyjną, klienta poczty lub stronę wsparcia projektu. Administrator przekazuje aplikacji nawigacyjnej współrzędne wybranego miejsca, a nie lokalizację użytkownika. Od chwili przejścia do usługi zewnętrznej jej dostawca przetwarza dane na własnych zasadach.</p>
+  <h2 id="zmiany-polityki">15. Zmiany Polityki</h2>
+  <p>Polityka może zostać zmieniona, w szczególności w razie dodania nowych funkcji, dostawców lub kategorii danych albo zmiany prawa. Aktualna wersja będzie dostępna w Aplikacji i pod adresem:</p>
+  <p><strong>https://pars-optima.github.io/emaus/polityka-prywatnosci.html</strong></p>
+  <p>O zmianach istotnie wpływających na prawa lub sposób przetwarzania danych Administrator poinformuje w Aplikacji przed rozpoczęciem nowego przetwarzania, a jeżeli będzie to wymagane — ponownie poprosi o zgodę.</p>
+  <h2 id="źródła-i-dokumenty-powiązane">16. Źródła i dokumenty powiązane</h2>
+  <ul>
+  <li><a href="https://pars-optima.github.io/emaus/regulamin.html">Regulamin aplikacji Emaus</a></li>
+  <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=pl">RODO — rozporządzenie (UE) 2016/679</a></li>
+  <li><a href="https://policies.google.com/privacy">Polityka prywatności Google</a></li>
+  <li><a href="https://maps.google.com/help/terms_maps/">Dodatkowe warunki Google Maps/Google Earth</a></li>
+  </ul>
 </main>
 
 <footer><div class="wrap"><span>© 2026 Emaus</span><a href="regulamin.html">Regulamin</a><a href="../index.html">Strona główna</a></div></footer>
