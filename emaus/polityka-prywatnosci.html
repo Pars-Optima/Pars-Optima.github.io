@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności – Emaus</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="brand" href="../index.html"><img src="../assets/img/icon.png" alt=""><span>Emaus</span></a><nav><a href="../index.html">Strona główna</a><a href="regulamin.html">Regulamin</a></nav></div></header>
+
+<main class="doc">
+  <div class="eyebrow">Dokument</div>
+  <h1>Polityka prywatności aplikacji Emaus</h1>
+  <p class="meta">Wersja robocza z dnia 4 września 2026 r.</p>
+
+  <div class="draft"><b>Projekt do weryfikacji prawnej.</b> Ten tekst to makieta struktury i treści. Fragmenty oznaczone kolorem wymagają uzupełnienia, a całość zatwierdzenia przed publikacją w Google Play. Do czasu zatwierdzenia dokument nie obowiązuje.</div>
+
+  <h2>1. Administrator danych</h2>
+  <p>Administratorem danych osobowych przetwarzanych w związku z aplikacją mobilną Emaus (dalej: „Aplikacja”) jest <span class="fill">[[DO UZUPEŁNIENIA: imię i nazwisko / nazwa, adres]]</span>. Kontakt w sprawach ochrony danych: <span class="fill">[[DO UZUPEŁNIENIA: e-mail]]</span>.</p>
+
+  <h2>2. Najkrócej</h2>
+  <ul>
+    <li>Aplikacja nie wymaga konta, logowania ani podania imienia, nazwiska czy adresu e-mail.</li>
+    <li>Twoja lokalizacja jest używana wyłącznie na telefonie do wycentrowania mapy i policzenia odległości. Nie wysyłamy jej na nasze serwery, chyba że sam ją dołączysz do zgłoszenia.</li>
+    <li>Jedyne dane, które trafiają do nas, to treść zgłoszeń poprawek, które sam wysyłasz: kategoria, komentarz, zdjęcia, opcjonalnie pozycja GPS oraz losowy identyfikator instalacji.</li>
+    <li>Nie ma reklam, nie ma analityki, nie sprzedajemy ani nie udostępniamy danych w celach marketingowych.</li>
+  </ul>
+
+  <h2>3. Jakie dane przetwarzamy i po co</h2>
+  <table>
+    <tr><th>Dane</th><th>Kiedy</th><th>Cel i podstawa</th></tr>
+    <tr><td>Losowy identyfikator instalacji (UUID)</td><td>Tworzony przy pierwszym zgłoszeniu, wysyłany z każdym zgłoszeniem</td><td>Grupowanie zgłoszeń z jednego urządzenia i ochrona przed nadużyciami. Uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO).</td></tr>
+    <tr><td>Pozycja GPS (szerokość, długość, dokładność)</td><td>Tylko przy wysyłce zgłoszenia, jeśli udzielono zgody na lokalizację; przy zgłoszeniu nowego miejsca jest wymagana</td><td>Weryfikacja wiarygodności zgłoszenia i ustalenie położenia miejsca kultu. <span class="fill">[[DO POTWIERDZENIA: zgoda (lit. a) czy uzasadniony interes (lit. f)]]</span></td></tr>
+    <tr><td>Zdjęcia (tablica z godzinami, ogłoszenie, budynek)</td><td>Tylko jeśli je dodasz do zgłoszenia</td><td>Weryfikacja godzin Mszy i adoracji. Prosimy o zdjęcia bez osób. <span class="fill">[[DO POTWIERDZENIA: podstawa]]</span></td></tr>
+    <tr><td>Treść komentarza i kategoria zgłoszenia</td><td>Tylko jeśli wyślesz zgłoszenie</td><td>Rozpatrzenie zgłoszenia i poprawa danych. Uzasadniony interes (lit. f).</td></tr>
+    <tr><td>Dane techniczne połączenia (adres IP)</td><td>Przy pobieraniu aktualizacji bazy i zdjęć kościołów</td><td>Dostarczenie usługi; przetwarzane przez dostawców infrastruktury w ich logach (pkt 5).</td></tr>
+  </table>
+  <p>Lokalizacja urządzenia używana do wyświetlenia mapy i odległości jest przetwarzana wyłącznie lokalnie na Twoim telefonie i nie jest przez nas zapisywana.</p>
+
+  <h2>4. Uprawnienia aplikacji</h2>
+  <ul>
+    <li><b>Lokalizacja</b> (opcjonalna): wycentrowanie mapy, odległości, geotag zgłoszenia. Bez zgody mapa startuje z widoku domyślnego.</li>
+    <li><b>Aparat i galeria</b> (opcjonalne): dodanie zdjęcia do zgłoszenia. Uprawnienie jest pytane dopiero, gdy wybierzesz zdjęcie.</li>
+  </ul>
+  <p>Aplikacja nie korzysta z lokalizacji w tle.</p>
+
+  <h2>5. Odbiorcy danych i dostawcy</h2>
+  <table>
+    <tr><th>Podmiot</th><th>Rola</th><th>Uwagi</th></tr>
+    <tr><td>Supabase</td><td>Baza danych i przechowywanie zdjęć zgłoszeń</td><td>Region: <span class="fill">[[DO UZUPEŁNIENIA]]</span>. Umowa powierzenia (DPA).</td></tr>
+    <tr><td>Google Maps Platform</td><td>Wyświetlanie mapy w aplikacji</td><td>Google przetwarza dane zgodnie z własną polityką prywatności: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</td></tr>
+    <tr><td>Cloudflare</td><td>Sieć dostarczania zdjęć kościołów (CDN)</td><td>Adres IP w logach serwera.</td></tr>
+    <tr><td><span class="fill">[[DO POTWIERDZENIA: n8n, Slack, dostawca modelu AI]]</span></td><td>Automatyczne porządkowanie i moderacja zgłoszeń</td><td>Wypełnić, jeśli obieg jest używany produkcyjnie.</td></tr>
+  </table>
+  <p>Po naciśnięciu „Trasa” współrzędne kościoła są przekazywane do wybranej przez Ciebie aplikacji nawigacyjnej. Od tego momentu obowiązuje polityka tej aplikacji.</p>
+
+  <h2>6. Jak długo przechowujemy dane</h2>
+  <p>Zgłoszenia i zdjęcia przechowujemy przez <span class="fill">[[DO UZUPEŁNIENIA: okres, np. 12 miesięcy od rozpatrzenia]]</span>, a następnie usuwamy lub anonimizujemy. Identyfikator instalacji jest usuwany razem z odinstalowaniem aplikacji z Twojego telefonu; w naszej bazie pozostaje przy zgłoszeniach przez ten sam okres.</p>
+
+  <h2>7. Twoje prawa</h2>
+  <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Ponieważ nie prowadzimy kont, prosimy o kontakt e-mailem i podanie przybliżonej daty oraz miejsca zgłoszenia, które chcesz usunąć.</p>
+
+  <h2>8. Dzieci</h2>
+  <p>Aplikacja nie jest kierowana do dzieci poniżej 13 roku życia i nie zbiera świadomie ich danych.</p>
+
+  <h2>9. Zmiany polityki</h2>
+  <p>O istotnych zmianach poinformujemy w aplikacji i na tej stronie. Data ostatniej aktualizacji znajduje się na górze dokumentu.</p>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Emaus</span><a href="regulamin.html">Regulamin</a><a href="../index.html">Strona główna</a></div></footer>
+</body>
+</html>
