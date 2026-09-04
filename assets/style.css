@@ -115,3 +115,8 @@ footer .spacer{flex:1}
   .hero-art{order:-1}
   .cta{grid-template-columns:1fr}
 }
+@media (max-width:600px){
+  .nav .wrap{height:auto;padding:10px 20px 8px;flex-wrap:wrap;row-gap:4px}
+  .nav nav{margin-left:0;width:100%;gap:2px}
+  .nav nav a{padding:6px 10px;font-size:12.5px}
+}
